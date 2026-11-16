@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "Консольный скрипт: замер скорости скачивания по 10 последовательным запросам",
   "private": true,
+  "type": "module",
   "bin": {
     "speedtest": "./speedtest.js"
   },
-  "engines": {
-    "node": ">=18"
+  "scripts": {
+    "start": "node speedtest.js",
+    "test": "node --test test/*.test.js"
   },
-  "license": "MIT"
+  "engines": {
+    "node": ">=20"
+  }
 }
